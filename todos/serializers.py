@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from .models import Todo
 
+#Here we define our serialiser for our Todo model
+#We also validate the incoming data to ensure the string has no blank spaces..
 
 class TodoSerializer(serializers.ModelSerializer):
     class Meta:
