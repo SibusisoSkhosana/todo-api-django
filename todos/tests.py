@@ -28,3 +28,20 @@ class TodoApiTests(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 1)
+
+    def test_get_single_todo(self):
+        response = self.client.get(f"/api/todos/{self.todo.id}/")
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data["title"], self.todo.title)
+
+    def test_update_todo(self):
+        data = {
+            "title": "Updated task",
+            "description": "Updated description",
+            "is_completed": True
+        }
+
+        response = self.client.put(f"/api/todos/{self.todo.id}/", data)
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
