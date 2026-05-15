@@ -1,6 +1,6 @@
 # Django TODO API
 
-This project is a simple TODO List API built with :contentReference[oaicite:1]{index=1} and :contentReference[oaicite:2]{index=2}.
+This project is a simple TODO List API built with Django.
 
 It allows users to create, view, update and delete TODO tasks.
 
@@ -8,13 +8,14 @@ The API was built as part of a junior developer technical assessment.
 
 ## Technologies Used
 
-- :contentReference[oaicite:3]{index=3}
-- :contentReference[oaicite:4]{index=4}
-- :contentReference[oaicite:5]{index=5}
-- :contentReference[oaicite:6]{index=6}
-- :contentReference[oaicite:7]{index=7}
-- [Render](https://render.com?utm_source=chatgpt.com)
-- [GitHub](https://github.com?utm_source=chatgpt.com)
+- Python
+- Django
+- Django REST Framework
+- SQLite
+- Docker
+- Render
+- GitHub
+- Postman
 
 ## Features
 
@@ -110,7 +111,7 @@ docker-compose up --build
 
 Postman collection included in this repository.
 
-Import the `.json` file into :contentReference[oaicite:10]{index=10} to test all endpoints.
+Import the `.json` file into POSTMAN to test all endpoints.
 
 ## Notes
 
