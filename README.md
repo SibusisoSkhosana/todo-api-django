@@ -1,0 +1,125 @@
+# Django TODO API
+
+This project is a simple TODO List API built with :contentReference[oaicite:1]{index=1} and :contentReference[oaicite:2]{index=2}.
+
+It allows users to create, view, update and delete TODO tasks.
+
+The API was built as part of a junior developer technical assessment.
+
+## Technologies Used
+
+- :contentReference[oaicite:3]{index=3}
+- :contentReference[oaicite:4]{index=4}
+- :contentReference[oaicite:5]{index=5}
+- :contentReference[oaicite:6]{index=6}
+- :contentReference[oaicite:7]{index=7}
+- [Render](https://render.com?utm_source=chatgpt.com)
+- [GitHub](https://github.com?utm_source=chatgpt.com)
+
+## Features
+
+This API can:
+
+- Create a todo
+- View all todos
+- View one todo
+- Update a todo
+- Delete a todo
+
+It also includes:
+
+- Logging
+- Unit tests
+- Docker support
+- Public deployment
+
+## API URL
+
+Live API:
+
+https://todo-api-django-kreq.onrender.com/api/todos/
+
+Home:
+
+https://todo-api-django-kreq.onrender.com/
+
+## API routes
+
+The following routes are available:
+
+- `GET /api/todos/` - shows all tasks
+- `POST /api/todos/` - creates a task
+- `GET /api/todos/<id>/` - shows a specific task
+- `PUT /api/todos/<id>/` - updates a task
+- `DELETE /api/todos/<id>/` - deletes a task
+
+## Run Locally
+
+Clone project:
+
+```bash
+git clone REPO_URL
+cd todo-api-django
+```
+
+Create virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate:
+
+```bash
+venv\Scripts\activate
+```
+
+Install packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run migrations:
+
+```bash
+python manage.py migrate
+```
+
+Start server:
+
+```bash
+python manage.py runserver
+```
+
+## Run Tests
+
+```bash
+python manage.py test
+```
+
+## Docker
+
+Build container:
+
+```bash
+docker-compose up --build
+```
+
+## Postman Collection
+
+Postman collection included in this repository.
+
+Import the `.json` file into :contentReference[oaicite:10]{index=10} to test all endpoints.
+
+## Notes
+
+This project uses Django best practices with separate:
+
+- models
+- serializers
+- views
+- urls
+- tests
+
+The app is deployed publicly and can be tested directly using the provided URL.
