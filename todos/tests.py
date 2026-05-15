@@ -60,3 +60,10 @@ class TodoApiTests(APITestCase):
         response = self.client.post("/api/todos/", data)
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_home_endpoint(self):
+        response = self.client.get("/")
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.json()["message"], "Todo API is running")
+        self.assertEqual(response.json()["endpoints"], "/api/todos/")

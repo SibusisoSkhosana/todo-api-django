@@ -15,6 +15,6 @@ class TodoSerializer(serializers.ModelSerializer):
         return value
     
     def validate_description(self, value):
-        if len(value) < 5:
+        if value and len(value) < 5:
             raise serializers.ValidationError("Description too short")
         return value
