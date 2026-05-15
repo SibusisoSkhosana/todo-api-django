@@ -1,10 +1,25 @@
 # Django TODO API
 
-This project is a simple TODO List API built with Django.
+This project is a simple TODO List API built with Django Rest Framework.
 
 It allows users to create, view, update and delete TODO tasks.
 
 The API was built as part of a junior developer technical assessment.
+
+## API URL
+
+Live API:
+
+https://todo-api-django-kreq.onrender.com/api/todos/
+
+Home:
+
+https://todo-api-django-kreq.onrender.com/
+
+GitHub Repository
+
+https://github.com/SibusisoSkhosana/todo-api-django.git
+
 
 ## Technologies Used
 
@@ -13,9 +28,9 @@ The API was built as part of a junior developer technical assessment.
 - Django REST Framework
 - SQLite
 - Docker
-- Render
-- GitHub
-- Postman
+- Render (Deployment)
+- GitHub (Version Control)
+- Postman (API Testing)
 
 ## Features
 
@@ -27,22 +42,13 @@ This API can:
 - Update a todo
 - Delete a todo
 
-It also includes:
+also includes:
 
 - Logging
 - Unit tests
 - Docker support
 - Public deployment
-
-## API URL
-
-Live API:
-
-https://todo-api-django-kreq.onrender.com/api/todos/
-
-Home:
-
-https://todo-api-django-kreq.onrender.com/
+- Input validation (model + serializer level)
 
 ## API routes
 
@@ -59,7 +65,7 @@ The following routes are available:
 Clone project:
 
 ```bash
-git clone REPO_URL
+git clone https://github.com/SibusisoSkhosana/todo-api-django.git
 cd todo-api-django
 ```
 
@@ -71,8 +77,11 @@ python -m venv venv
 
 Activate:
 
-```bash
+```bash (Windows)
 venv\Scripts\activate
+```
+```bash (Mac and Linux)
+source venv\bin\activate
 ```
 
 Install packages:
@@ -111,7 +120,12 @@ docker-compose up --build
 
 Postman collection included in this repository.
 
-Import the `.json` file into POSTMAN to test all endpoints.
+To use it:
+
+1.Open Postman
+2.Click Import
+3.Select the .json file from the project root
+4.Run requests against the API endpoints
 
 ## Notes
 

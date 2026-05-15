@@ -13,3 +13,8 @@ class TodoSerializer(serializers.ModelSerializer):
         if not value.strip():
             raise serializers.ValidationError("Title cannot be empty")
         return value
+    
+    def validate_description(self, value):
+        if len(value) < 5:
+            raise serializers.ValidationError("Description too short")
+        return value
